@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 7, 2013 11:29:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="net.favor.imagecapter.hibernate.reveng.pojo.ImageRecord" table="IMAGE_RECORD" catalog="imagecapter">
+        <id name="imImageKey" type="java.lang.Integer">
+            <column name="IM_IMAGE_KEY" />
+            <generator class="identity" />
+        </id>
+        <property name="imFileName" type="java.lang.String">
+            <column name="IM_FILE_NAME" />
+        </property>
+        <property name="imFileSize" type="java.lang.Integer">
+            <column name="IM_FILE_SIZE" />
+        </property>
+        <property name="imCreatedBy" type="java.lang.String">
+            <column name="IM_CREATED_BY" length="50" />
+        </property>
+        <property name="imCreatedDate" type="timestamp">
+            <column name="IM_CREATED_DATE" length="19" />
+        </property>
+        <property name="imUpdatedBy" type="java.lang.String">
+            <column name="IM_UPDATED_BY" length="50" />
+        </property>
+        <property name="imUpdatedDate" type="timestamp">
+            <column name="IM_UPDATED_DATE" length="19" />
+        </property>
+        <property name="imComment" type="java.lang.String">
+            <column name="IM_COMMENT" length="2048" />
+        </property>
+        <property name="imCaptureTime" type="timestamp">
+            <column name="IM_CAPTURE_TIME" length="19" />
+        </property>
+        <property name="imCaptureDate" type="timestamp">
+            <column name="IM_CAPTURE_DATE" length="19" />
+        </property>
+        <property name="imCameraMake" type="java.lang.String">
+            <column name="IM_CAMERA_MAKE" length="45" />
+        </property>
+        <property name="imCameraModel" type="java.lang.String">
+            <column name="IM_CAMERA_MODEL" length="75" />
+        </property>
+        <property name="imFocal" type="java.lang.Double">
+            <column name="IM_FOCAL" precision="22" scale="0" />
+        </property>
+        <property name="imAperature" type="java.lang.Double">
+            <column name="IM_APERATURE" precision="22" scale="0" />
+        </property>
+        <property name="imExposure" type="java.lang.Double">
+            <column name="IM_EXPOSURE" precision="22" scale="0" />
+        </property>
+        <property name="imIso" type="java.lang.String">
+            <column name="IM_ISO" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<DynamicSqlTemplate>
+  <mainBody><![CDATA[
+	SELECT * 
+	FROM   apple 
+			
+]]></mainBody>
+  <Attributes>
+    <Attribute>
+      <key>ATTRIBUTE KEE</key>
+      <sql>Attribute VALUE</sql>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter>
+      <key>Parameter KEE</key>
+      <type>STRING</type>
+      <value>Parameter VALUE</value>
+    </Parameter>
+  </Parameters>
+  <wrapPaging>false</wrapPaging>
+  <showDebugInfo>false</showDebugInfo>
+</DynamicSqlTemplate>

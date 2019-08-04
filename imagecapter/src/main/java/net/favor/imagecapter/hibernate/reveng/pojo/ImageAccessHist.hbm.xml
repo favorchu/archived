@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 7, 2013 11:29:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="net.favor.imagecapter.hibernate.reveng.pojo.ImageAccessHist" table="IMAGE_ACCESS_HIST" catalog="imagecapter">
+        <id name="iaKey" type="java.lang.Integer">
+            <column name="IA_KEY" />
+            <generator class="identity" />
+        </id>
+        <property name="iaAccessType" type="java.lang.Character">
+            <column name="IA_ACCESS_TYPE" length="1" />
+        </property>
+        <property name="iaCreatedBy" type="java.lang.String">
+            <column name="IA_CREATED_BY" length="50" />
+        </property>
+        <property name="iaCreatedDate" type="timestamp">
+            <column name="IA_CREATED_DATE" length="19" />
+        </property>
+        <property name="iaImgKey" type="java.lang.Integer">
+            <column name="IA_IMG_KEY" />
+        </property>
+    </class>
+</hibernate-mapping>

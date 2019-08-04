@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 24, 2014 10:35:51 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="competition.onedata.hibernate.reveng.pojo.SuspendClasses" table="SUSPEND_CLASSES" catalog="hongming_dev">
+        <id name="scKey" type="java.lang.Integer">
+            <column name="SC_KEY" />
+            <generator class="identity" />
+        </id>
+        <property name="scDate" type="timestamp">
+            <column name="SC_DATE" length="19" not-null="true" />
+        </property>
+        <property name="scDetail" type="string">
+            <column name="SC_DETAIL" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

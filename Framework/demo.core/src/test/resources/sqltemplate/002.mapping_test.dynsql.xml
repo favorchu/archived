@@ -1,0 +1,54 @@
+<DynamicSqlTemplate>
+  <mainBody><![CDATA[
+	SELECT * 
+	FROM   apple 
+			
+	--01
+	@@@ATT.-_/01@@@	
+	--02
+	###ATT.-_/02###
+	--03		
+	###ATT.-_/03###		
+	--02
+	@@@ATT.-_/02@@@			
+]]></mainBody>
+  <Attributes>
+    <Attribute>
+      <key>ATT.-_/01</key>
+      <sql><![CDATA[ 
+      		Content of "ATT_01"
+      		###ATT.-_/03###
+      ]]></sql>
+    </Attribute>
+    <Attribute>
+      <key>ATT.-_/02</key>
+      <sql><![CDATA[ 
+      		Content of "ATT-02"
+      		###ATT.-_/03###
+      ]]></sql>
+    </Attribute>
+    <Attribute>
+      <key>ATT.-_/03</key>
+      <sql><![CDATA[ 
+      		Content of "ATT-03"
+      			###ATT.-_/04###
+      ]]></sql>
+    </Attribute>
+    <Attribute>
+      <key>ATT.-_/04</key>
+      <sql><![CDATA[ 
+      		Content of "ATT-04"
+      	
+      ]]></sql>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter>
+      <key>Parameter KEE</key>
+      <type>STRING</type>
+      <value>Parameter VALUE</value>
+    </Parameter>
+  </Parameters>
+  <wrapPaging>false</wrapPaging>
+  <showDebugInfo>false</showDebugInfo>
+</DynamicSqlTemplate>

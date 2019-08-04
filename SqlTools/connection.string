@@ -1,0 +1,1 @@
+jdbc:oracle:thin:@TMISDB:1521:TMISDEV

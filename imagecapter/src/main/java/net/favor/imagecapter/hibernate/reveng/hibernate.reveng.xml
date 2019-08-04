@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<type-mapping>
+		<sql-type jdbc-type="CHAR" length="1" hibernate-type="java.lang.Character" />
+		<sql-type jdbc-type="NUMERIC" precision="5" scale="2" hibernate-type="java.lang.Double" />
+		<sql-type jdbc-type="NUMERIC" precision="6" scale="2" hibernate-type="java.lang.Double" />
+		<sql-type jdbc-type="NUMERIC" precision="12" scale="6" hibernate-type="java.lang.Double" />
+		<sql-type jdbc-type="NUMERIC" precision="10" scale="0" hibernate-type="java.lang.Long" />
+		<sql-type jdbc-type="NUMERIC" precision="38" scale="0" hibernate-type="java.lang.Long" />
+		<sql-type jdbc-type="NUMERIC" scale="0" hibernate-type="java.lang.Integer" />
+		<sql-type jdbc-type="NUMERIC" hibernate-type="java.lang.Double" />
+		<sql-type jdbc-type="VARCHAR" length="1" not-null="true" hibernate-type="java.lang.Character" />
+		<sql-type jdbc-type="VARCHAR" length="1" hibernate-type="java.lang.Character" />
+		<sql-type jdbc-type="VARCHAR" hibernate-type="java.lang.String" />
+		<sql-type jdbc-type="DATE" hibernate-type="java.util.Date" />
+		<sql-type jdbc-type="BLOB" hibernate-type="java.sql.Blob" />
+		<sql-type jdbc-type="BINARY" hibernate-type="java.sql.Blob" />
+		<sql-type jdbc-type="OTHER" hibernate-type="java.sql.Blob" />
+	</type-mapping>
+
+	<table name="OrbeonFormDefinitionAttach">
+		<column name="file_content">
+		</column>
+	</table>
+
+</hibernate-reverse-engineering>

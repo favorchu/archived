@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 24, 2014 10:35:51 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="competition.onedata.hibernate.reveng.pojo.RoadSectionSpeed" table="ROAD_SECTION_SPEED" catalog="hongming_dev">
+        <composite-id name="id" class="competition.onedata.hibernate.reveng.pojo.RoadSectionSpeedId">
+            <key-property name="ssStartPointKey" type="int">
+                <column name="SS_START_POINT_KEY" />
+            </key-property>
+            <key-property name="ssEndPointKey" type="int">
+                <column name="SS_END_POINT_KEY" />
+            </key-property>
+        </composite-id>
+        <property name="ssSpeed" type="double">
+            <column name="SS_SPEED" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="ssStatus" type="competition.onedata.hibernate.type.RoadStatusType">
+            <column name="SS_STATUS" length="1" not-null="true" />
+        </property>
+        <property name="ssCaptureDate" type="timestamp">
+            <column name="SS_CAPTURE_DATE" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

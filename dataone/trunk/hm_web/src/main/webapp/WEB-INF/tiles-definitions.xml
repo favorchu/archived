@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="base.definition" template="/WEB-INF/views/layouts/main.jsp">
+		<put-attribute name="primary-content" value="" />
+	</definition>
+
+
+	<definition name="tiles.console.traffic" extends="base.definition">
+		<put-attribute name="primary-content" value="/WEB-INF/views/console/traffic.jsp" />
+	</definition>
+
+	<definition name="tiles.console.addtrafficAccident" extends="base.definition">
+		<put-attribute name="primary-content"
+			value="/WEB-INF/views/console/add_traffic_accident.jsp" />
+	</definition>
+
+	<definition name="tiles.console.trafficAccident" extends="base.definition">
+		<put-attribute name="primary-content"
+			value="/WEB-INF/views/console/traffic_accident.jsp" />
+	</definition>
+	
+	<definition name="tiles.console.suspendclass" extends="base.definition">
+		<put-attribute name="primary-content"
+			value="/WEB-INF/views/console/suspendclass.jsp" />
+	</definition>
+
+	<definition name="tiles.console.weather" extends="base.definition">
+		<put-attribute name="primary-content" value="/WEB-INF/views/console/weather.jsp" />
+	</definition>
+
+	<definition name="tiles.landing" extends="base.definition">
+		<put-attribute name="primary-content" value="/WEB-INF/views/landing.jsp" />
+	</definition>
+
+
+</tiles-definitions>

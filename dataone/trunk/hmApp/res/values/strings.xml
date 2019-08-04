@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">天.地.通</string>
+    <string name="gpsOff">衛星定位已關閉</string>
+    <string name="gpsOn">衛星定位已開啟</string>
+    <string name="gpsWaiting">等待GPS信號</string>
+    <string name="noGPS">未能取得位置，可能定位未開啟或未定位成功。</string>
+    <string name="gpsOutOfSer">定位功能暫停</string>
+    <string name="hello_world">天.地.通</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_map_test">天.地.通</string>
+    <string name="title_activity_main">天.地.通</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="light_grey">#ededed</color>
+    <color name="black">#3f3f3f</color>
+    <color name="list_grey">#d4d4d4</color>
+    <color name="weather_grey">#a8a8a8</color>
+    <string name="large_text">Large Text</string>
+    <string name="refresh">Refresh</string>
+    <string name="edit">Edit</string>
+    <string name="close">Close</string>
+
+</resources>

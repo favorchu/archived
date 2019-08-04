@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 24, 2014 10:35:51 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="competition.onedata.hibernate.reveng.pojo.RoadAccident" table="ROAD_ACCIDENT" catalog="hongming_dev">
+        <id name="raAccidentKey" type="java.lang.Integer">
+            <column name="RA_ACCIDENT_KEY" />
+            <generator class="identity" />
+        </id>
+        <property name="raDateTime" type="timestamp">
+            <column name="RA_DATE_TIME" length="19" not-null="true" />
+        </property>
+        <property name="raDetail" type="string">
+            <column name="RA_DETAIL" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

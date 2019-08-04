@@ -1,0 +1,1 @@
+java -jar Import.jar -d special.txt -o tile.sqlite -t Tiles

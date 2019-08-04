@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+	<!-- Basic -->
+	<app_name>ImageCapter</app_name>
+	<app_version>0.1</app_version>
+	<landing_url>/app/album/that2013s/</landing_url>
+
+	<!-- <content_folder>c:/temp/</content_folder> -->
+
+	<content_folder>/var/imagecapter/thai2013s</content_folder>
+	<!--  <content_folder>/Users/favor_chu/temp</content_folder>-->
+
+
+	<!--5000images -->
+	<max_vol>5048576000</max_vol>
+	<password>maejo</password>
+
+</configurations>

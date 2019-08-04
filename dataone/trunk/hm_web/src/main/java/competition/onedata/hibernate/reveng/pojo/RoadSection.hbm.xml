@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 24, 2014 10:35:51 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="competition.onedata.hibernate.reveng.pojo.RoadSection" table="ROAD_SECTION" catalog="hongming_dev">
+        <composite-id name="id" class="competition.onedata.hibernate.reveng.pojo.RoadSectionId">
+            <key-property name="rsStartPointKey" type="int">
+                <column name="RS_START_POINT_KEY" />
+            </key-property>
+            <key-property name="rsEndPointKey" type="int">
+                <column name="RS_END_POINT_KEY" />
+            </key-property>
+        </composite-id>
+        <property name="rsStartEast" type="double">
+            <column name="RS_START_EAST" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="rsStartNorth" type="double">
+            <column name="RS_START_NORTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="rsEndEast" type="double">
+            <column name="RS_END_EAST" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="rsEndNorth" type="double">
+            <column name="RS_END_NORTH" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="rsRegion" type="competition.onedata.hibernate.type.RoadRegionType">
+            <column name="RS_REGION" length="1" not-null="true" />
+        </property>
+        <property name="rsType" type="competition.onedata.hibernate.type.RoadType">
+            <column name="RS_TYPE" length="1" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
